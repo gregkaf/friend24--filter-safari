@@ -1,0 +1,118 @@
+.features__cards {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.features__cards .features__icon-like {
+  position: absolute;
+  top: 11px;
+  left: 14px;
+}
+
+.features__cards .features__icon-book {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+
+.features__cards .features__icon-key {
+  position: absolute;
+  top: 6px;
+  left: 7px;
+}
+
+.features__card {
+  width: 384px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 20px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 2px solid white;
+}
+
+.features__card-icon {
+  margin-bottom: 24px;
+  z-index: 1;
+  position: relative;
+  background: #ffffff;
+  height: 120px;
+  width: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 555.66px #EEE5FF) drop-shadow(0px 0px 317.52px #EEE5FF) drop-shadow(0px 0px 185.22px #EEE5FF) drop-shadow(0px 0px 92.61px #EEE5FF) drop-shadow(0px 0px 26.46px #EEE5FF) drop-shadow(0px 0px 13.23px #EEE5FF);
+}
+
+.features__card-title {
+  z-index: 2;
+  position: relative;
+  font-family: 'Manrope-Regular';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  width: 252px;
+  margin-bottom: 14px;
+}
+
+.features__card-text {
+  z-index: 2;
+  position: relative;
+  font-family: 'Manrope-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (max-width: 1440px) {
+  .features__card-icon {
+    height: 100px;
+    width: 100px;
+  }
+
+  .features__card {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+  }
+
+  .features__card .features__card-title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .features__card .features__card-text {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .features__card .features__card-icon {
+    margin-bottom: 16px;
+  }
+
+  .features__cards .features__icon-key {
+    top: -2px;
+    left: -3px;
+  }
+  .features__cards .features__icon-book {
+    top: 4px;
+    left: 6px;
+  }
+  .features__cards .features__icon-like {
+    top: 2px;
+    left: 7px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .features__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,58 @@
+/* fonts */
+@font-face {
+  font-family: 'Manrope-Regular';
+  src: url('../fonts/Manrope-Regular.woff2') format('woff2'),
+    url('../fonts/Manrope-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gatwick-Bold';
+  src: url('../fonts/Gatwick-Bold.woff2') format('woff2'),
+    url('../fonts/Gatwick-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- testimonials */
+.testimonials {
+  z-index: 2;
+  position: relative;
+  padding-top: 175px;
+  padding-bottom: 275px;
+}
+
+.testimonials__title {
+  position: relative;
+  font-family: 'Gatwick-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 51px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 16px;
+  margin-bottom: 46px;
+  z-index: 3;
+}
+
+/* testimonials */
+.banner-stories__item .card-body .testimonials__stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.banner-stories__item .card-body .testimonials__stars-inner {
+  display: flex;
+  width: 120px;
+}
+
+.banner-stories__item .card-body .testimonials__star {
+  width: 24px;
+  height: 24px;
+}

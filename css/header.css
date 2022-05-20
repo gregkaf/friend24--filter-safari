@@ -1,0 +1,292 @@
+main {
+  position: relative;
+  z-index: 3;
+}
+
+.orbit {
+  position: absolute;
+  top: -7px;
+  left: -31px;
+}
+
+.header__button {
+  position: relative;
+  z-index: 3;
+}
+
+.star-suriken-contained-little-bold {
+  position: absolute;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  top: 42px;
+  left: 150px;
+}
+
+.star-suriken-contained-little-bold img {
+  position: absolute;
+  top: -183px;
+  left: -260px;
+}
+
+.girl-cloud {
+  position: absolute;
+  background: #ffffff;
+  top: 31px;
+  left: -73px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  font-family: 'Manrope-Regular', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: #5b63a7;
+  padding: 0 32px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.heart-one-up {
+  position: absolute;
+  bottom: 219px;
+  right: -27px;
+  height: 57px;
+  width: 100px;
+}
+
+.heart-one-up img {
+  position: absolute;
+  top: 0;
+  right: -31px;
+}
+
+/* --- navigation  */
+.navigation {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  margin-bottom: 19px;
+}
+
+.navigation__buttons-group {
+  display: flex;
+  gap: 77px;
+  align-items: center;
+  font-family: 'Manrope-Semibold', sans-serif;
+  color: #ffffff;
+}
+
+.navigation__logo {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__intro {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 112px;
+}
+
+.navigation__main-text {
+  margin-top: 138px;
+  align-self: flex-start;
+  margin-left: 106px;
+  max-width: 500px;
+}
+
+.navigation__title {
+  font-family: 'Gatwick-Bold', sans-serif;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 80px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.navigation__sub-title {
+  font-family: 'Manrope-Medium', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 45px;
+}
+
+.navigation__figure {
+  position: relative;
+}
+
+.navigation__figure-inner {
+  position: relative;
+  overflow: hidden;
+  width: 410px;
+  height: 730px;
+}
+
+.navigation__figure-inner img {
+  position: absolute;
+  left: -134px;
+  top: 0;
+}
+
+.navigation__burger {
+  display: none;
+  width: 50px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.navigation__burger:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.navigation__burger:active {
+  transform: scale(0.9);
+  transition: 0.1s;
+}
+
+/* burger >>> */
+.navigation__mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  height: 100vh;
+  align-items: center;
+  font-family: 'Manrope-Semibold', sans-serif;
+  color: #ffffff;
+  font-size: 30px;
+  display: none;
+}
+
+.show__mobile-menu {
+  display: flex;
+}
+
+.navigation__close {
+  display: none;
+}
+
+.navigation__show {
+  display: block;
+}
+
+/* .navigation__burger-hide {
+  display: none;
+} */
+
+.navigation__mobile-menu-features,
+.navigation__mobile-menu-about,
+.navigation__mobile-menu-contact-us {
+  cursor: pointer;
+}
+
+/* <<< burger */
+
+@media screen and (max-width: 1010px) {
+  .navigation__intro {
+    flex-direction: column;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigation__main-text {
+    align-self: center;
+    align-items: center;
+    margin: 0;
+  }
+  .navigation__main-text .navigation__title {
+    text-align: center;
+  }
+  .navigation__main-text .header__button {
+    align-self: center;
+  }
+  .navigation__main-text .navigation__sub-title {
+    text-align: center;
+  }
+  .navigation__main-text .header__button-wrapper {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .navigation__buttons-group {
+    display: none;
+  }
+  .navigation__burger {
+    display: block;
+  }
+  .girl-cloud {
+    height: 50px;
+    width: 130px;
+    font-size: 13px;
+    left: -20px;
+    top: 100px;
+    padding: 0 20px;
+  }
+  .heart-one-up {
+    right: 0px;
+  }
+
+  .navigation__figure-inner img {
+    width: 360px;
+    left: -34px;
+    top: 106px;
+  }
+  .navigation__figure-inner {
+    width: 310px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 833px) {
+  .orbit {
+    width: 500px;
+    top: 63px;
+    left: 69px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigation__title {
+    font-size: 32px;
+    line-height: 42px;
+    margin-top: 80px;
+  }
+
+  .navigation__sub-title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .navigation__burger {
+    width: 35px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .orbit {
+    width: 300px;
+    top: 113px;
+    left: -16px;
+  }
+  .navigation__title {
+    font-size: 31px;
+  }
+  .orbit {
+    display: none;
+  }
+}
